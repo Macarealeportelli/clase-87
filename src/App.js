@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Tarjeta from './components/Tarjeta';
 
-function App() {
+const App=(props)=> {
+
+  console.log(props)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+     <Tarjeta nombre="sillon" precio="$ 50.000"/>
+     <Tarjeta nombre="silla"  precio="$ 5.600"/>
+     <Tarjeta nombre="mesa"  precio="$ 18.000"/>
+     <Tarjeta nombre="banqueta"  precio="$ 3.400"/>
+     <Tarjeta nombre="mesa ratona"  precio="$ 6.500"/>
+   </div>
   );
 }
 
